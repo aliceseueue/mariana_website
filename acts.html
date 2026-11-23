@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artistic Portfolio — Mariana Chacon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header page-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mariana Chacon</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="acts.html" class="nav-active">Artistic Portfolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-intro">
+      <h1>Artistic Portfolio</h1>
+      <p>aerial hoop &nbsp;/&nbsp; dance</p>
+    </section>
+
+    <section class="portfolio-section" id="acts">
+      <div class="section-head">
+        <h2>Acts</h2>
+        <span class="section-type">video</span>
+      </div>
+      <div class="video-grid">
+        <article class="video-card">
+          <h3>The body as a container — demo</h3>
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/plmqaH8QyPc" title="The body as a container — demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <a class="video-link" href="https://www.youtube.com/watch?v=plmqaH8QyPc" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+        </article>
+        <article class="video-card">
+          <h3>Desde adentro — version 2</h3>
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/yXRw8F0Wwd4" title="Desde adentro — version 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <a class="video-link" href="https://youtu.be/yXRw8F0Wwd4" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio-section" id="gallery">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <span class="section-type">photos</span>
+      </div>
+      <div class="gallery-group">
+        <input class="gallery-checkbox" type="checkbox" id="gallery-more" />
+        <div class="gallery-grid">
+          <figure><a href="#photo-1"><img src="pics/gallery/pic1.jpg" alt="Mariana Chacon photo 1" loading="lazy" /></a></figure>
+          <figure><a href="#photo-2"><img src="pics/gallery/pic2.jpg" alt="Mariana Chacon photo 2" loading="lazy" /></a></figure>
+          <figure><a href="#photo-3"><img src="pics/gallery/pic3.jpg" alt="Mariana Chacon photo 3" loading="lazy" /></a></figure>
+          <figure><a href="#photo-4"><img src="pics/gallery/pic4.jpg" alt="Mariana Chacon photo 4" loading="lazy" /></a></figure>
+          <figure><a href="#photo-5"><img src="pics/gallery/pic5.jpg" alt="Mariana Chacon photo 5" loading="lazy" /></a></figure>
+          <figure><a href="#photo-6"><img src="pics/gallery/pic6.jpg" alt="Mariana Chacon photo 6" loading="lazy" /></a></figure>
+          <figure><a href="#photo-7"><img src="pics/gallery/pic7.jpg" alt="Mariana Chacon photo 7" loading="lazy" /></a></figure>
+          <figure><a href="#photo-8"><img src="pics/gallery/pic8.jpg" alt="Mariana Chacon photo 8" loading="lazy" /></a></figure>
+          <figure><a href="#photo-9"><img src="pics/gallery/pic9.jpg" alt="Mariana Chacon photo 9" loading="lazy" /></a></figure>
+          <figure><a href="#photo-10"><img src="pics/gallery/pic10.jpg" alt="Mariana Chacon photo 10" loading="lazy" /></a></figure>
+          <figure><a href="#photo-11"><img src="pics/gallery/pic11.jpg" alt="Mariana Chacon photo 11" loading="lazy" /></a></figure>
+          <figure><a href="#photo-12"><img src="pics/gallery/pic12.jpg" alt="Mariana Chacon photo 12" loading="lazy" /></a></figure>
+          <figure><a href="#photo-13"><img src="pics/gallery/pic13.jpg" alt="Mariana Chacon photo 13" loading="lazy" /></a></figure>
+          <figure><a href="#photo-14"><img src="pics/gallery/pic14.jpg" alt="Mariana Chacon photo 14" loading="lazy" /></a></figure>
+          <figure><a href="#photo-15"><img src="pics/gallery/pic15.jpg" alt="Mariana Chacon photo 15" loading="lazy" /></a></figure>
+          <figure><a href="#photo-16"><img src="pics/gallery/pic16.jpg" alt="Mariana Chacon photo 16" loading="lazy" /></a></figure>
+          <figure><a href="#photo-17"><img src="pics/gallery/pic17.jpg" alt="Mariana Chacon photo 17" loading="lazy" /></a></figure>
+        </div>
+        <label class="gallery-toggle" for="gallery-more">
+          <span class="show-more-label">Show all 17 photos ↓</span>
+          <span class="show-less-label">Show less ↑</span>
+        </label>
+      </div>
+
+      <div class="lightbox" id="photo-1" role="dialog" aria-modal="true" aria-label="Photo 1 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic1.jpg" alt="Mariana Chacon photo 1" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-2" role="dialog" aria-modal="true" aria-label="Photo 2 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic2.jpg" alt="Mariana Chacon photo 2" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-3" role="dialog" aria-modal="true" aria-label="Photo 3 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic3.jpg" alt="Mariana Chacon photo 3" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-4" role="dialog" aria-modal="true" aria-label="Photo 4 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic4.jpg" alt="Mariana Chacon photo 4" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-5" role="dialog" aria-modal="true" aria-label="Photo 5 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic5.jpg" alt="Mariana Chacon photo 5" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-6" role="dialog" aria-modal="true" aria-label="Photo 6 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic6.jpg" alt="Mariana Chacon photo 6" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-7" role="dialog" aria-modal="true" aria-label="Photo 7 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic7.jpg" alt="Mariana Chacon photo 7" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-8" role="dialog" aria-modal="true" aria-label="Photo 8 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic8.jpg" alt="Mariana Chacon photo 8" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-9" role="dialog" aria-modal="true" aria-label="Photo 9 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic9.jpg" alt="Mariana Chacon photo 9" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-10" role="dialog" aria-modal="true" aria-label="Photo 10 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic10.jpg" alt="Mariana Chacon photo 10" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-11" role="dialog" aria-modal="true" aria-label="Photo 11 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic11.jpg" alt="Mariana Chacon photo 11" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-12" role="dialog" aria-modal="true" aria-label="Photo 12 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic12.jpg" alt="Mariana Chacon photo 12" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-13" role="dialog" aria-modal="true" aria-label="Photo 13 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic13.jpg" alt="Mariana Chacon photo 13" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-14" role="dialog" aria-modal="true" aria-label="Photo 14 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic14.jpg" alt="Mariana Chacon photo 14" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-15" role="dialog" aria-modal="true" aria-label="Photo 15 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic15.jpg" alt="Mariana Chacon photo 15" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-16" role="dialog" aria-modal="true" aria-label="Photo 16 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic16.jpg" alt="Mariana Chacon photo 16" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+      <div class="lightbox" id="photo-17" role="dialog" aria-modal="true" aria-label="Photo 17 enlarged">
+        <a class="lightbox-backdrop" href="#gallery" aria-label="Close"></a>
+        <a class="lightbox-image" href="#gallery"><img src="pics/gallery/pic17.jpg" alt="Mariana Chacon photo 17" /></a>
+        <a class="lightbox-close" href="#gallery" aria-label="Close">&times;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Mariana Chacon</p>
+  </footer>
+</body>
+</html>
