@@ -23,7 +23,7 @@ body {
 
 body {
   min-height: 100vh;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inconsolata', 'Courier New', monospace;
   color: var(--ink);
   background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
   overflow-x: hidden;
@@ -31,7 +31,7 @@ body {
 
 h1,
 .brand {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Inconsolata', 'Courier New', monospace;
   font-weight: 300;
 }
 
@@ -225,7 +225,7 @@ h1,
 
 .section-head h2 {
   margin: 0;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Inconsolata', 'Courier New', monospace;
   font-size: clamp(1.7rem, 4vw, 2.4rem);
   font-weight: 300;
   letter-spacing: 0.02em;
@@ -344,7 +344,7 @@ h1,
   width: max-content;
   margin: 1.5rem auto 0;
   padding: 0.6rem 1.5rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inconsolata', 'Courier New', monospace;
   font-size: 0.75rem;
   font-weight: 300;
   letter-spacing: 0.12em;
@@ -431,6 +431,130 @@ h1,
   color: #fff;
 }
 
+.about-content {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-text p {
+  margin: 0 0 1.25rem;
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--ink-light);
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  border: 1px solid var(--bg-3);
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(63, 55, 225, 0.12);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-form {
+  max-width: 520px;
+}
+
+.form-row {
+  margin-bottom: 2rem;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.form-row input,
+.form-row textarea {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink);
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--bg-3);
+  border-radius: 0;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border-bottom-color: var(--accent);
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.form-submit {
+  padding: 0.7rem 2rem;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.form-submit:hover {
+  color: #fff;
+  background: var(--accent);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.contact-links a {
+  width: max-content;
+  max-width: 100%;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.contact-links a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
 .site-footer {
   padding: 2.5rem 1.5rem;
   border-top: 1px solid var(--bg-3);
@@ -443,6 +567,35 @@ h1,
   font-weight: 300;
   letter-spacing: 0.12em;
   color: var(--muted);
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+  border-bottom-color: transparent;
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  border-top: 0;
+  background: transparent;
+}
+
+.hero-footer p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.hero-footer a:hover {
+  color: #fff;
 }
 
 @media (max-width: 900px) {
@@ -460,6 +613,12 @@ h1,
 }
 
 @media (max-width: 640px) {
+  .hero {
+    min-height: 100svh;
+    min-height: 100dvh;
+    background-position: 50% 35%;
+  }
+
   .site-header {
     padding: 1.1rem 0;
   }
@@ -508,5 +667,28 @@ h1,
 
   .gallery-checkbox:checked ~ .gallery-grid figure:nth-child(n+5) {
     display: block;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-image img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-form-wrap {
+    order: 1;
+  }
+
+  .contact-content .about-image {
+    order: 2;
   }
 }

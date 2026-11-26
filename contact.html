@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Mariana Chacon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header page-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mariana Chacon</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="acts.html">Artistic Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-intro">
+      <h1>Contact</h1>
+    </section>
+
+    <section class="contact-content">
+      <div class="contact-form-wrap">
+        <form class="contact-form" action="mailto:mariana.delrio.chacon@gmail.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send</button>
+        </form>
+
+        <div class="contact-links">
+          <a href="mailto:mariana.delrio.chacon@gmail.com">mariana.delrio.chacon@gmail.com</a>
+          <a href="https://www.instagram.com/Mariana.delrio.chacon/" target="_blank" rel="noopener noreferrer">@Mariana.delrio.chacon</a>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="pics/profile/profile1.png" alt="Mariana del Rio Chacon" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Mariana Chacon &nbsp;·&nbsp; Site by <a href="https://aliceseueue.github.io/" target="_blank" rel="noopener noreferrer">Alice Cariboni</a></p>
+  </footer>
+</body>
+</html>
